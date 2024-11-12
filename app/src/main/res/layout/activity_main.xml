@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/backgroundColor"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <!-- Custom Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:title="Baby Details"
+        android:titleTextColor="@android:color/white"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        app:subtitle="CareNest"
+        app:subtitleTextColor="@android:color/white" />
+
+    <!-- ListView for displaying baby details -->
+    <ListView
+        android:id="@+id/babyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:backgroundTint="@color/backgroundColor"
+        android:background="@color/backgroundColor"
+        android:layout_below="@id/customToolbar"
+        android:layout_above="@+id/fab"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Floating Action Button to add new baby details -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/primary_color"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:contentDescription="Add Baby"
+        app:srcCompat="@drawable/baseline_add_24"
+        app:fabSize="normal" />
+</RelativeLayout>

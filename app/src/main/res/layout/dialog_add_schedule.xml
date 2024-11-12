@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="16dp"
+
+    android:background="@drawable/rounded_background"
+    android:elevation="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule details"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/activityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter activity (e.g., Nap Time)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColorHint="@color/text_secondary"
+        android:textColor="@color/text_primary" />
+
+    <!-- Time Picker -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginTop="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:elevation="2dp" />
+</LinearLayout>

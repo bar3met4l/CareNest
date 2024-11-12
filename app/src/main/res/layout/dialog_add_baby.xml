@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:elevation="4dp"
+        android:clipToPadding="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baby's details"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+        <ImageView
+            android:id="@+id/babyImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+        android:contentDescription="Baby Picture"
+        android:clickable="true"
+        android:focusable="true" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@android:color/white"
+            android:text="Select Picture"
+            android:elevation="2dp"
+            android:paddingHorizontal="16dp" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Baby Name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/rounded_edittext_background"
+            android:textColor="@color/text_primary" />
+
+        <!-- Date of Birth Input -->
+        <EditText
+            android:id="@+id/dateOfBirthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/text_secondary"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:textColor="@color/text_primary"/>
+
+        <!-- Gender Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/text_secondary"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:text="Male"
+                android:buttonTint="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:text="Female"
+                android:layout_marginStart="16dp"
+                android:buttonTint="@color/text_primary" />
+        </RadioGroup>
+
+        <!-- Health Note Input -->
+        <EditText
+            android:id="@+id/healthNoteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health Note"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/rounded_edittext_background"
+            android:textColor="@color/text_primary" />
+
+        <!-- Emergency Contact Input -->
+        <EditText
+            android:id="@+id/emergencyContactEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Emergency Contact"
+            android:inputType="phone"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></LinearLayout>
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:elevation="2dp"
+            android:paddingVertical="12dp" />
+    </LinearLayout>
+</ScrollView>

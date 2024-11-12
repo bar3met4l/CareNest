@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#FFB74D</color> <!-- Soft orange -->
+    <color name="secondary_color">#81D4FA</color> <!-- Light blue -->
+    <color name="accent_color">#FFCDD2</color> <!-- Soft pink -->
+    <color name="background_color">#FFFFFF</color> <!-- White -->
+    <color name="text_primary">#333333</color> <!-- Dark gray -->
+    <color name="text_secondary">#757575</color> <!-- Light gray -->
+    <color name="button_color">#4CAF50</color> <!-- Light green -->
+
+
+
+<!-- Primary Theme Colors -->
+<color name="colorPrimary">#FFC1E3</color> <!-- Soft Pink -->
+<color name="colorPrimaryDark">#FFB1D2</color> <!-- Deeper Pink -->
+<color name="colorAccent">#FFD700</color> <!-- Golden Yellow -->
+
+<!-- Background and Text Colors -->
+<color name="backgroundColor">#FFF8DC</color> <!-- Light Cream -->
+<color name="textColorPrimary">#333333</color> <!-- Dark Gray for text -->
+<color name="textColorSecondary">#666666</color> <!-- Light Gray for secondary text -->
+
+<!-- Additional Colors for Buttons or Highlights -->
+<color name="babyBlue">#ADD8E6</color> <!-- Light Blue -->
+<color name="softGreen">#98FB98</color> <!-- Pale Green -->
+<color name="softOrange">#FFDAB9</color> <!-- Peach Puff -->
+</resources>

@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CareNest" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.CareNest" parent="Base.Theme.CareNest" />
+    <!-- Base application theme -->
+    <style name="Theme.KidsCareApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary branding color for the app -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/secondary_color</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <!-- Secondary branding color for the app -->
+        <item name="colorSecondary">@color/accent_color</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/background_color</item>
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <!-- Custom corner radius for rounded buttons, cards, etc. -->
+        <item name="shapeAppearanceCornerSmall">@dimen/corner_radius_small</item>
+        <item name="shapeAppearanceCornerMedium">@dimen/corner_radius_medium</item>
+    </style>
+    <!-- Custom button style -->
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/babyBlue</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:radius">16dp</item>
+    </style>
+
+    <!-- Custom Toolbar Style -->
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:titleTextColor">@color/backgroundColor</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+
+
+
+
+</resources>
